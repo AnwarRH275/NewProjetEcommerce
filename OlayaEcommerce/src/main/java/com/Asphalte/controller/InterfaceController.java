@@ -28,4 +28,37 @@ public class InterfaceController {
 		return "checkout";
 	}
 
+	@RequestMapping(value = "/login")
+	public String login() {
+		return "login";
+	}
+	
+	@RequestMapping(value = "/cart")
+	public String cart() {
+		return "cart";
+	}
+	
+	@RequestMapping("/confirmation")
+	private String confiramtiom() {
+		// TODO Auto-generated method stub
+		return "confirmation";
+	}
+	
+	
+	@RequestMapping(value = "/blog")
+	private String blog() {
+		return "blog";
+	}
+	
+	@RequestMapping(value = "/single-blog")
+	private String  singleBlog() {
+		return "single-blog";
+	}
+	
+	@RequestMapping(value = "/contact")
+	public String contact() {
+		return "contact";
+	}
+	
+	
 }
